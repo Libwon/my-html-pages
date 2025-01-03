@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Page</title>
+    <style>
+        body {
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Full viewport height */
+            background-image: url('my_photo.jpg');
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-repeat: no-repeat;
+            background-position: center center; /* Centers the background image */
+            background-attachment: fixed; /* Makes the background stay fixed while scrolling */
+            color: white; /* Text color */
+            text-shadow: 2px 2px 4px #000; /* Add some shadow to the text for better readability */
+            overflow: hidden; /* Hides overflow for animation */
+            display: flex;
+            justify-content: flex-start; /* Aligns content to the top */
+            align-items: flex-start; /* Aligns content to the top */
+            padding-top: 20px; /* Adds some padding from the top */
+        }
+        .content-box {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            animation: slide-in 2s forwards; /* Slide-in animation */
+        }
+        @keyframes slide-in {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        <h1>Welcome to the Next Page</h1>
+        <audio controls>
+            <source src="It_is_realme.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</body>
+</html>
